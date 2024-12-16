@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Usuários</h1>
+
+    <!-- Formulário para adicionar/editar usuários -->
+    <form id="userForm">
+        <input type="hidden" id="userId" />
+        <input type="text" id="userName" placeholder="Nome" required />
+        <input type="email" id="userEmail" placeholder="Email" required />
+        <input type="text" id="userAddress" placeholder="Endereço" required />
+        <input type="text" id="userPhone" placeholder="Telefone" required />
+        <input type="text" id="userUsername" placeholder="Nome de usuário" required />
+        <input type="password" id="userPassword" placeholder="Senha" required />
+        <button type="submit">Salvar</button>
+    </form>
+
+    <h2>Lista de Usuários</h2>
+    <ul id="userList"></ul>
+</body>
+</html>
